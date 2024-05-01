@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Collage</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Racing+Sans+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form method="get" action="submission.html" name="reg_form" onsubmit="return validate()">
+        <div id="div">Registration Form </div>
+        <table>
+            <td><label for="fname">First Name </label></td>
+            <td>:</td>
+            <td><input type="text" placeholder="Enter F Name..." name="FName" id="name" ></td>
+    <tr>
+        <td><label for="lname">Last Name </label></td>
+        <td>:</td>
+        <td><input type="text" name="LName" id="lname" placeholder=" Enter L Name"></td>
+    </tr>
+    <tr>
+        <td><label for="phone">Enter a phone number</label></td>
+        <td>:</td>
+        <td><input type="tel" id="phone" name="phone" placeholder="Enter Sudent Phone Number " pattern="[0-9]{10}" ></td>
+    </tr>
+    <tr>
+        <td><label for="mail">Email  </label></td>
+        <td>:</td>
+        <td><input type="email" placeholder="@email.com" name="email" id="mail" ></td>
+    </tr>
+    <tr>
+        <td><label for="password">Password</label></td>
+        <td>:</td>
+        <td>
+            <div class="icon">
+                <input type="password" name="password" id="password"   placeholder="Enter Password">
+                <img src="./eye-close.png" id="eyeicon">
+            </div></td>
+    </tr>
+        <tr>   
+        <td><label for="Gender" aria-required="true">Gender</label></td>
+        <td>:</td>
+        <td><input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="others">
+        <label for="others">Others</label>
+    <tr>
+        <td><label for="dob">DOB:</label></td>
+        <td>:</td>
+        <td><input type="date" name="dob" id="dob"></td>
+    </tr>
+    <tr>
+        <td><label for="resume">Upload Your Documents  </label></td>
+        <td>:</td>
+        <td><input type="file" name="resume" id="resume" ></td>
+    </tr>
+    <tr>
+        <td><label type="select" for="">Gropu</label></td>
+        <td>:</td>
+        <td><select name="type">
+            <option value="">..select..</option>
+            <option value="">B.Com</option>
+            <option value="">BSC</option>
+            <option value="">BZC</option>
+        </select ></td><br><br>
+    </tr>
+    <tr>
+        <td><label for="percentage">Chosee Your Inter Pecentage </label></td>
+        <td>:</td>
+        <td><input type="checkbox" name="percentage" id="marks1" >
+        <label for="marks1">100-80</label>
+        <input type="checkbox" name="Marks" id="marks2">
+        <label for="marks2">80-60</label>
+        <input type="checkbox" name="Marks" id="marks3">
+        <label for="marks3">60-50</label></td>
+    </tr>
+    <tr>
+        <td><label for="">Enter Your Self : </label></td>
+        <td>:</td>
+        <td><textarea  cols="70" rows="5" placeholder="Write Your Self Here.."></textarea></textarea></td>
+    </tr>
+    <tr align="center">
+        <td colspan="3"><input type="submit" id="submit" name="reg_form">
+        <input type="reset" name="reset" id="reset"></td>
+    </table>
+    </form>
+    <div class="photo">
+        <input type="file" name="" id="">
+        <span>Choose Student Photo</span>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

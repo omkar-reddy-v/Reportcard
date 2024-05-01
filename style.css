@@ -1,0 +1,105 @@
+body{
+    background-color: lightgray;
+    color: rgb(255, 255, 255);
+}
+:root{
+    --bg--color:rgb(5, 43, 68);
+    --text--color:rgb(44, 210, 240);
+}
+input[type="text"],input[type="tel"],input[type="email"],input[type="password"],input[type="date"],input[type="datetime-local"]{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+}
+input[type="file"]:hover{
+    background-color: #171717;
+    width: 190px;
+    color: white;
+    border-radius: 2rem;
+    border: 1px solid lightgray;
+}
+ form table input:hover{
+    background-image: linear-gradient(rgb(109, 205, 235),rgb(118, 240, 114));
+    border-radius: 1rem;
+
+}
+input[type="submit"],input[type="reset"]{
+    width: 80px;
+    height: 30px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+
+}  
+.icon img{
+    width: 20px;
+    cursor: pointer;
+    position: relative;
+    right: 25px;
+}
+#div{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+}
+form{
+    font-size: 20px;
+    border: 1px solid lightcyan;
+    background-color: #171717;
+    width: 75%;
+    margin: 2% 20% 10% ;
+    border-radius: 4rem;
+}
+table{
+    padding: 80px;
+}
+ form table  label{
+    font-family: "Racing Sans One", sans-serif;
+}
+td{
+    padding: 10px;
+}
+.photo{
+    border: 1px solid white;
+    position: relative;
+    bottom: 140vh;
+    left: 160vh;
+    width: 200px;
+    height: 140px;
+    border-radius: 1rem;
+
+}
+.photo input{
+    position: relative;
+    top: 50px;
+    left: 10px;
+    right: 5px;
+    
+}
+.photo input:hover{
+    width: 180px;
+}
+#submit{
+    color: rgb(221, 19, 204);
+    background-color:rgb(253, 219, 65) ;
+    border-radius: 1rem;
+    
+}
+#reset{
+    color: rgb(221, 19, 204);
+    background-color:rgb(253, 219, 65) ;
+    border-radius: 1rem;
+}
+form textarea {
+    resize: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+    
+}
+  
